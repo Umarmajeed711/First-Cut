@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  --dark: #1a1a1a;
+  --light: #fff;
+  --button: #e1c564;
+  --dgray: #595959;
+  --lgray: #cdcdcd;
+  --peach: #ffa71e;
+
+  background-color: var(--dark);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.top {
+  color: var(--light);
+  border-bottom: 1px solid rgb(219, 214, 214);
+}
+
+.media {
+  display: flex;
+  column-gap: 20px;
+}
+
+.nav {
+  display: flex;
+  column-gap: 40px;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.dropdown a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.drop a {
+  color: var(--dark) !important;
+  transition: all 0.3s;
+}
+.drop a:active,
+.drop a:hover {
+  background-color: var(--dark);
+  color: var(--button) !important;
+}
+.main {
+  background-image: url(images/barber.8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 68px;
+  letter-spacing: -2px;
+  opacity: 1;
+  color: var(--light);
+}
+h1 + p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light);
+}
+
+.button {
+  background-color: var(--button);
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+.button:hover,
+.button:active {
+  color: var(--button);
+  background-color: var(--dark);
+  border: 1px solid var(--button);
+  box-shadow: 0px 0px 5px var(--lgray);
+}
+
+.button2 {
+  background-color: var(--button);
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+.button2:hover,
+.button2:active {
+  color: var(--button);
+  background-color: var(--dark);
+  border: 1px solid var(--button);
+  box-shadow: 0px 0px 10px var(--dgray);
+}
+.linediv {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  height: 20px;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: var(--button);
+  display: inline-block;
+}
+
+.smoke {
+  background-color: whitesmoke;
+}
+
+.card {
+  transition: all 0.5s;
+}
+.card:active,
+.card:hover {
+  box-shadow: 0px -5px 20px var(--button);
+  transform: translateY(20px);
+}
+
+.hairs p {
+  color: var(--dark);
+}
+
+.heading {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: -1px;
+}
+
+.headingwhite {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: var(--light);
+}
+
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dgray);
+}
+
+.paragraphgray {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lgray);
+}
+
+.paragraphwhite {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light);
+}
+
+.barber {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.brown {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 68px;
+  letter-spacing: -2px;
+  color: var(--button);
+}
+
+.white {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  height: 17vh;
+  background-color: var(--light);
+  border-left: 3px solid var(--button);
+  box-shadow: 2px 2px 5px var(--lgray);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.brown2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -2px;
+  color: var(--button);
+  text-align: center;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 10px var(--lgray);
+  flex-direction: column;
+  border-bottom: 3px solid var(--button);
+  transition: all 0.3s;
+}
+
+.services:hover,
+.services:active {
+  box-shadow: 0px 0px 10px var(--dgray);
+}
+.cardhead {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  margin-top: 5px;
+}
+
+.learn {
+  border: none;
+  color: var(--button);
+  font-size: 20px;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--button);
+  padding-bottom: 3px;
+  padding: 2px;
+  margin-bottom: 5px;
+  background-color: var(--light);
+  font-family: "Cormorant Garamond", serif;
+  transition: all 0.3s;
+}
+
+.learn:hover,
+.learn:active {
+  background-color: var(--dark);
+  color: var(--button);
+  box-shadow: 0px 0px 5px var(--dgray);
+}
+
+.express {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.pri {
+  position: relative;
+  border: 2px dashed var(--lgray);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.promote {
+  position: absolute;
+  background-color: var(--light);
+  top: 0;
+  margin-top: -15px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.italic {
+  font-family: Cormorant Garamond;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 26.64px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: var(--light);
+}
+
+.ceo {
+  border: 2px dashed var(--lgray);
+  text-align: center;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.comma {
+  font-family: Cormorant Garamond;
+  font-size: 100px;
+  font-weight: 900;
+  color: var(--light);
+}
+
+.footerheadings {
+  font-family: Cormorant Garamond;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27.6px;
+  text-align: left;
+  color: var(--light);
+  border-bottom: 1px solid var(--lgray);
+  padding-bottom: 10px;
+}
+
+.footerlinks {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  color: var(--lgray);
+}
+
+.linkborder {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed var(--lgray);
+}
+
+.footerpara {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 700;
+
+  color: var(--light);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--lgray);
+}
+
+#email {
+  padding: 6px;
+  color: var(--dgray);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.foremail {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.copy {
+  background-color: var(--dgray);
+  color: var(--lgray);
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.price {
+  display: flex;
+  column-gap: 20px;
+}
+
+.styling {
+  font-family: Cormorant Garamond;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27.6px;
+  color: var(--light);
+}
+.quis {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--light);
+}
+
+.shade {
+  border: 2px dashed var(--lgray);
+  position: relative;
+}
+
+.whatdo {
+  background-image: url(images/barber.1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.back2 {
+  background-image: url(images/barber3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.back3 {
+  background-image: url(images/barber.7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.back4 {
+  background-image: url(images/barber.8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
