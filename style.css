@@ -19,11 +19,35 @@ body {
   background-color: var(--dark);
 }
 
-header a {
-  text-decoration: none;
+#icon {
+  cursor: pointer;
   color: var(--light);
+
+}
+#icon img{
+  width: 30px;
+  height: 30px;
 }
 
+
+.dark-theme{
+  /* --dark:#1a1a1a;
+  --light: #1a1a1a;
+  --button: #e1c564;
+  --dgray: #595959;
+  --lgray: #cdcdcd;
+  --peach: #ffa71e; */
+}
+
+header  a {
+  text-decoration: none;
+  color: var(--light);
+  transition: all .3s;
+}
+
+header a:hover ,header  a:active{
+  color: var(--button);
+}
 .top {
   color: var(--light);
   border-bottom: 1px solid rgb(219, 214, 214);
