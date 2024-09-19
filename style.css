@@ -11,41 +11,46 @@
 body {
   --dark: #1a1a1a;
   --light: #fff;
+  --white: #fff;
+  --black: #1a1a1a;
   --button: #e1c564;
   --dgray: #595959;
   --lgray: #cdcdcd;
-  --peach: #ffa71e;
+  --bbgray: #595959;
+  --promotion: #fff;
 
   background-color: var(--dark);
+}
+
+.dark-theme {
+  --white: #1a1a1a;
+  --black: #fff;
+  --dark: #1a1a1a;
+  --light: #fff;
+  --button: #e1c564;
+  --bbgray: #e7dbdb;
+  --dgray: #595959;
+  --lgray: #cdcdcd;
+  --promotion: #e1c564;
 }
 
 #icon {
   cursor: pointer;
   color: var(--light);
-
-}
-#icon img{
   width: 30px;
   height: 30px;
+  border: 2px solid var(--button);
+  border-radius: 50%;
 }
 
-
-.dark-theme{
-  /* --dark:#1a1a1a;
-  --light: #1a1a1a;
-  --button: #e1c564;
-  --dgray: #595959;
-  --lgray: #cdcdcd;
-  --peach: #ffa71e; */
-}
-
-header  a {
+header a {
   text-decoration: none;
   color: var(--light);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-header a:hover ,header  a:active{
+header a:hover,
+header a:active {
   color: var(--button);
 }
 .top {
@@ -150,14 +155,16 @@ h1 + p {
   height: 3px;
   background-color: var(--button);
   display: inline-block;
+  color: var(--black);
 }
 
 .smoke {
-  background-color: whitesmoke;
+  background-color: var(--white);
 }
 
 .card {
   transition: all 0.5s;
+  background-color: var(--white);
 }
 .card:active,
 .card:hover {
@@ -166,7 +173,7 @@ h1 + p {
 }
 
 .hairs p {
-  color: var(--dark);
+  color: var(--black);
 }
 
 .heading {
@@ -175,6 +182,7 @@ h1 + p {
   font-size: 44px;
   line-height: 44px;
   letter-spacing: -1px;
+  color: var(--black);
 }
 
 .headingwhite {
@@ -191,7 +199,7 @@ h1 + p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--dgray);
+  color: var(--black);
 }
 
 .paragraphgray {
@@ -215,6 +223,7 @@ h1 + p {
   font-weight: 600;
   font-size: 30px;
   line-height: 24px;
+  color: var(--black);
 }
 
 .brown {
@@ -231,11 +240,14 @@ h1 + p {
   justify-content: space-around;
   width: 55%;
   height: 17vh;
-  background-color: var(--light);
+  background-color: var(--white);
   border-left: 3px solid var(--button);
   box-shadow: 2px 2px 5px var(--lgray);
 }
 
+.pop {
+  color: var(--black);
+}
 .dark {
   background-color: var(--dark);
 }
@@ -253,16 +265,18 @@ h1 + p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  column-gap: 5px;
   padding: 10px;
   box-shadow: 2px 2px 10px var(--lgray);
   flex-direction: column;
   border-bottom: 3px solid var(--button);
   transition: all 0.3s;
+  background-color: var(--white);
 }
 
 .services:hover,
 .services:active {
-  box-shadow: 0px 0px 10px var(--dgray);
+  box-shadow: 2px 2px 10px var(--bbgray);
 }
 .cardhead {
   font-family: "Cormorant Garamond", serif;
@@ -270,6 +284,7 @@ h1 + p {
   font-size: 28px;
   letter-spacing: -0.5px;
   margin-top: 5px;
+  color: var(--black);
 }
 
 .learn {
@@ -281,7 +296,7 @@ h1 + p {
   padding-bottom: 3px;
   padding: 2px;
   margin-bottom: 5px;
-  background-color: var(--light);
+  background-color: var(--white);
   font-family: "Cormorant Garamond", serif;
   transition: all 0.3s;
 }
@@ -290,7 +305,7 @@ h1 + p {
 .learn:active {
   background-color: var(--dark);
   color: var(--button);
-  box-shadow: 0px 0px 5px var(--dgray);
+  box-shadow: 0px 0px 5px var(--bbgray);
 }
 
 .express {
@@ -298,6 +313,7 @@ h1 + p {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: -0.5px;
+  color: var(--black);
 }
 
 .pri {
@@ -310,7 +326,7 @@ h1 + p {
 
 .promote {
   position: absolute;
-  background-color: var(--light);
+  background-color: var(--promotion);
   top: 0;
   margin-top: -15px;
   padding: 5px;
@@ -391,12 +407,21 @@ footer a {
   color: var(--dgray);
   font-size: 16px;
   font-weight: 600;
+  margin-top: -2px;
+  transition: all 0.3s;
+}
+
+#email:hover,
+#email:active {
+  box-shadow: 0px 0px 10px var(--lgray);
 }
 
 .foremail {
   display: flex;
   column-gap: 5px;
   align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 
 .copy {

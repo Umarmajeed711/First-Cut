@@ -61,7 +61,7 @@
         </div>
         <!-- navbar -->
         <ul class="nav">
-          <li><a href="#">Home</a></li>
+          <a href="#">Home</a>
           <div class="dropdown">
             <a class="dropdown-toggle" data-bs-toggle="dropdown"> About Us </a>
             <ul class="dropdown-menu drop">
@@ -82,9 +82,9 @@
               <li><a class="dropdown-item" href="#service">Wash</a></li>
             </ul>
           </div>
-          <li><a href="#contact">Appointment</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li id="icon"><img src="images/moon.png" alt=""></li>
+          <a href="#contact">Appointment</a>
+          <a href="#contact">Contact Us</a>
+          <li><img src="moon.png" alt="" id="icon" /></li>
         </ul>
       </nav>
     </header>
@@ -189,7 +189,7 @@
               />
               <div class="card-body">
                 <h4 class="card-title brown2">Hair Cut</h4>
-                <p class="card-text" style="text-align: center">
+                <p class="card-text pop" style="text-align: center">
                   Nunc letius ex cubilia mattis class. Congue etiam ante
                   scelerisque.
                 </p>
@@ -208,7 +208,7 @@
               />
               <div class="card-body">
                 <h4 class="card-title brown2">Shave</h4>
-                <p class="card-text" style="text-align: center">
+                <p class="card-text pop" style="text-align: center">
                   Nunc letius ex cubilia mattis class. Congue etiam ante
                   scelerisque.
                 </p>
@@ -216,7 +216,7 @@
             </div>
           </div>
 
-          <!-- card 3 -->
+          <!-- card 3  -->
           <div class="col">
             <div class="card p-1">
               <img
@@ -225,7 +225,7 @@
                 alt="Card image"
                 style="width: 100%; height: 70%"
               />
-              <div class="card-body">
+              <div class="card-body pop">
                 <h4 class="card-title brown2">Wash</h4>
                 <p class="card-text" style="text-align: center">
                   Nunc letius ex cubilia mattis class. Congue etiam ante
@@ -263,7 +263,12 @@
       <div class="container mt-5">
         <div
           class="row"
-          style="display: flex; row-gap: 20px; padding-bottom: 40px"
+          style="
+            display: flex;
+            row-gap: 20px;
+            padding-bottom: 40px;
+            column-gap: 3px;
+          "
         >
           <!-- card 1 -->
           <div class="services col-md-4">
@@ -292,7 +297,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="services col-md-4">
+          <div class="services col">
             <div>
               <img src="images/div.elementskit-info-box-icon (2).png" alt="" />
             </div>
@@ -332,7 +337,7 @@
 
           <!-- card 6 -->
 
-          <div class="services col-md-4">
+          <div class="services col">
             <div>
               <img src="images/div.elementskit-info-box-icon (6).png" alt="" />
             </div>
@@ -577,7 +582,7 @@
       <img src="images/Section.png" alt="" class="col-12" />
     </div>
 
-    <footer class="dark">
+    <footer class="dark container-fluid">
       <div class="container pt-5 py-3">
         <div class="row">
           <div class="col">
@@ -625,25 +630,22 @@
     </footer>
 
     <div>
-      <p class="copy">
+      <p class="copy container-fluid">
         Copyright © 2023 Cutznix, All rights reserved. Powered by MoxCreative
       </p>
     </div>
 
-
     <script>
+      let icon = document.getElementById("icon");
 
-    let  icon = document.getElementById("icon");
-
-      icon.onclick = function(){
+      icon.onclick = function () {
         document.body.classList.toggle("dark-theme");
-        if( document.body.classList.contains("dark-theme")){
-          icon.src = "images/moon.png"
-        }else{
-          icon.src = "images/image.png"
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun2.png";
+        } else {
+          icon.src = "images/moon.png";
         }
-      }
+      };
     </script>
-    
   </body>
 </html>
