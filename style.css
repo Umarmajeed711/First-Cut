@@ -20,6 +20,8 @@ body {
   --promotion: #fff;
 
   background-color: var(--dark);
+  overflow-x: hidden;
+  transition: all .3s;
 }
 
 .dark-theme {
